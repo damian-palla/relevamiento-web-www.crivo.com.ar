@@ -1,4 +1,4 @@
-# 🔍 QA Relevamiento — Crivo S.R.L.
+# 🔍 Relevamiento QA — Crivo S.R.L.
 
 Relevamiento independiente de calidad sobre el sitio web [crivo.com.ar](https://crivo.com.ar), realizado en el rol de QA Engineer externo. El objetivo fue brindar un diagnóstico del estado actual del sitio, documentando bugs, proponiendo mejoras y entregando evidencia concreta al equipo de desarrollo y al cliente.
 
