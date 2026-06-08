@@ -1,0 +1,13 @@
+{
+  "name": "cypress-crivo",
+  "version": "1.0.0",
+  "description": "Tests E2E con Cypress para crivo.com.ar",
+  "scripts": {
+    "cy:open": "cypress open",
+    "cy:run": "cypress run",
+    "cy:run:headed": "cypress run --headed"
+  },
+  "devDependencies": {
+    "cypress": "^13.17.0"
+  }
+}

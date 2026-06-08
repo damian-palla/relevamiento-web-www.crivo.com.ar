@@ -1,0 +1,91 @@
+{
+  "validData": {
+    "firstName":   "Test",
+    "lastName":    "User",
+    "company":     "Test Company",
+    "email":       "test@example.com",
+    "phone":       "1122334455",
+    "productType": "Vinilos de impresión",
+    "comments":    "Mensaje de prueba"
+  },
+
+  "emptyRequiredFields": {
+    "firstName":   "",
+    "lastName":    "",
+    "company":     "",
+    "email":       "",
+    "phone":       "",
+    "productType": "",
+    "comments":    "Mensaje de prueba"
+  },
+
+  "invalidEmail": {
+    "firstName":   "Test",
+    "lastName":    "User",
+    "company":     "Test Company",
+    "email":       "testexample.com",
+    "phone":       "1122334455",
+    "productType": "Ojales",
+    "comments":    "Mensaje de prueba"
+  },
+
+  "invalidEmailDomain": {
+    "firstName":   "Test",
+    "lastName":    "User",
+    "company":     "Test Company",
+    "email":       "test@",
+    "phone":       "1122334455",
+    "productType": "Vinilos de impresión",
+    "comments":    "Mensaje de prueba"
+  },
+
+  "invalidPhone": {
+    "firstName":   "Test",
+    "lastName":    "User",
+    "company":     "Test Company",
+    "email":       "test@example.com",
+    "phone":       "abc123",
+    "productType": "Vinilos de impresión",
+    "comments":    "Mensaje de prueba"
+  },
+
+  "shortPhone": {
+    "firstName":   "Test",
+    "lastName":    "User",
+    "company":     "Test Company",
+    "email":       "test@example.com",
+    "phone":       "1234567",
+    "productType": "Portabanners de hierro",
+    "comments":    "Mensaje de prueba"
+  },
+
+  "onlyRequiredFields": {
+    "firstName":   "Test",
+    "lastName":    "User",
+    "company":     "Test Company",
+    "email":       "test@example.com",
+    "phone":       "1122334455",
+    "productType": "Lonas Blockout",
+    "comments":    ""
+  },
+
+  "emptyProductType": {
+    "firstName":   "Test",
+    "lastName":    "User",
+    "company":     "Test Company",
+    "email":       "test@example.com",
+    "phone":       "1122334455",
+    "productType": "",
+    "comments":    "Mensaje de prueba"
+  },
+
+  "emptyComments": {
+    "firstName":   "Test",
+    "lastName":    "User",
+    "company":     "Test Company",
+    "email":       "test@example.com",
+    "phone":       "1122334455",
+    "productType": "Vinilos de impresión",
+    "comments":    ""
+  }
+}

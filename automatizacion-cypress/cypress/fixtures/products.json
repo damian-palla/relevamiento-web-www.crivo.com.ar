@@ -1,0 +1,48 @@
+{
+  "detailPages": {
+    "vinilos": [
+      "/detalle_producto/vinilos/vinilo-de-impresi-n-blanco-brillo-base-blanca-80-mic-1",
+      "/detalle_producto/vinilos/vinilo-de-impresi-n-blanco-brillo-base-negra-80-mic-2",
+      "/detalle_producto/vinilos/vinilo-de-impresi-n-blanco-mate-base-gris-80-mic-3",
+      "/detalle_producto/vinilos/vinilo-de-impresi-n-blanco-brillo-base-blanca-100-mic-4",
+      "/detalle_producto/vinilos/vinilo-de-impresi-n-blanco-brillo-base-blanca-80-mic-5",
+      "/detalle_producto/vinilos/vinilo-de-impresi-n-blanco-brillo-base-gris-80-mic-6",
+      "/detalle_producto/vinilos/vinilo-de-impresi-n-blanco-mate-base-gris-80-mic-7",
+      "/detalle_producto/vinilos/vinilo-de-impresi-n-microperforado-140-mic-8",
+      "/detalle_producto/vinilos/vinilo-de-impresi-n-transparente-80-mic-9",
+      "/detalle_producto/vinilos/vinilo-de-impresi-n-esmerilado-80-mic-31",
+      "/detalle_producto/vinilos/vinilos-de-corte-30",
+      "/detalle_producto/vinilos/vinilos-de-alto-tr-nsito-10",
+      "/detalle_producto/vinilos/vinilos-vehiculares-32"
+    ],
+    "lonas": [
+      "/detalle_producto/lonas/lona-front-8-oz-13",
+      "/detalle_producto/lonas/lona-front-13-oz-27",
+      "/detalle_producto/lonas/lona-backlight-13-oz-11",
+      "/detalle_producto/lonas/lona-backlight-15-oz-28",
+      "/detalle_producto/lonas/lona-blockout-13-oz-12",
+      "/detalle_producto/lonas/lona-blockout-15-oz-29",
+      "/detalle_producto/lonas/lona-mesh-14"
+    ],
+    "placas-rigidas": [
+      "/detalle_producto/placas-rigidas/pvc-espumado-18",
+      "/detalle_producto/placas-rigidas/foamboard-17",
+      "/detalle_producto/placas-rigidas/corrugado-pl-stico-16",
+      "/detalle_producto/placas-rigidas/bicapa-para-grabado-laser-15"
+    ],
+    "portabanners": [
+      "/detalle_producto/portabanners/simple-tensor-19",
+      "/detalle_producto/portabanners/doble-tensor-20",
+      "/detalle_producto/portabanners/prensa-21",
+      "/detalle_producto/portabanners/mini-roll-up-22",
+      "/detalle_producto/portabanners/roll-up-23",
+      "/detalle_producto/portabanners/roll-up-prensa-26"
+    ],
+    "tintas-accesorios": [
+      "/detalle_producto/tintas-accesorios/maquina-de-ojales-25",
+      "/detalle_producto/tintas-accesorios/ojales-34",
+      "/detalle_producto/tintas-accesorios/tintas-galaxy-24",
+      "/detalle_producto/tintas-accesorios/papel-posicionador-transfer-33"
+    ]
+  }
+}
