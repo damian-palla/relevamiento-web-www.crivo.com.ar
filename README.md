@@ -43,7 +43,7 @@ El relevamiento abarcó las siguientes áreas:
 
 El Test Plan está compuesto por **46 casos de prueba** distribuidos en 7 módulos, cubriendo todas las áreas del alcance definido.
 
-🔗 [Ver Test Plan completo (Google Sheets)](https://docs.google.com/spreadsheets/d/tu-link-aqui)
+🔗 [Ver Test Plan completo (Google Sheets)]([https://docs.google.com/spreadsheets/d/tu-link-aqui](https://docs.google.com/spreadsheets/d/1owTKM8zT8wdjxl7C9UYXNLAQKs_gSjwe/edit?usp=drive_link&ouid=116250769003121408033&rtpof=true&sd=true))
 
 ### Resumen de ejecución por módulo
 
@@ -133,7 +133,7 @@ Además de los bugs, se identificaron oportunidades de mejora en las siguientes 
 
 | Recurso | Link |
 |---|---|
-| 📊 Test Plan y Bug Reports | [Google Drive](https://drive.google.com/tu-link-aqui) |
+| 📊 Test Plan y Bug Reports | [Google Drive]([https://drive.google.com/tu-link-aqui](https://drive.google.com/drive/folders/108cniT7KjhTTbCE8S2aFljwguexl_8oB?usp=drive_link)) |
 | 🎨 Propuestas UX/UI | [Figma](https://www.figma.com/board/X1dLCJ6DTrBBwILGjPU7RT/FigJam-Basics?node-id=0-1&p=f&t=CiRG2TcZdlKFnPSV-0) |
 | 📹 Evidencia de bugs | Carpeta adjunta en Drive (capturas y videos por bug) |
 
