@@ -17,7 +17,13 @@ Independent quality assessment of the [crivo.com.ar](https://crivo.com.ar) websi
 | **Test type** | Manual — Black box |
 | **Environment** | Production |
 | **Delivery date** | April 2026 |
-| **QA Engineer** | Damián Palla |
+
+---
+
+## 👤 Author
+
+**Damián Palla** — QA Engineer  
+[LinkedIn](https://www.linkedin.com/in/damianpalla/) · [GitHub](https://github.com/damian-palla)
 
 ---
 
@@ -215,13 +221,6 @@ Beyond the bugs, improvement opportunities were identified in the following area
 - UX/UI improvement proposals were complemented with mockups in Figma.
 
 ---
-
-## 👤 Author
-
-**Damián Palla** — QA Engineer  
-[LinkedIn](https://www.linkedin.com/in/damianpalla/) · [GitHub](https://github.com/damian-palla)
-
----
 ---
 
 [English](#english) | **Español**
@@ -246,7 +245,13 @@ Relevamiento independiente de calidad sobre el sitio web [crivo.com.ar](https://
 | **Tipo de pruebas** | Manuales — Caja negra |
 | **Entorno** | Producción |
 | **Fecha de entrega** | Abril 2026 |
-| **QA Engineer** | Damián Palla |
+
+---
+
+## 👤 Autor
+
+**Damián Palla** — QA Engineer  
+[LinkedIn](https://www.linkedin.com/in/damianpalla/) · [GitHub](https://github.com/damian-palla)
 
 ---
 
@@ -442,10 +447,3 @@ Además de los bugs, se identificaron oportunidades de mejora en las siguientes 
 - Los bugs están vinculados a sus casos de prueba relacionados y clasificados por severidad: **Alta**, **Media** y **Baja**.
 - Cada bug cuenta con: descripción, pasos para reproducir, resultado esperado, resultado obtenido y evidencia visual.
 - Las propuestas de mejora de UX/UI fueron complementadas con mockups en Figma.
-
----
-
-## 👤 Autor
-
-**Damián Palla** — QA Engineer  
-[LinkedIn](https://www.linkedin.com/in/damianpalla/) · [GitHub](https://github.com/damian-palla)
