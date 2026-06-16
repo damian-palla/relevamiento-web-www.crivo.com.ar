@@ -74,6 +74,17 @@ The Test Plan consists of **46 test cases** across 7 modules, covering all the a
 
 As a complement to the manual assessment, a subset of **end-to-end (E2E)** cases was automated with **Cypress**, applying the **Page Object Model (POM)** pattern to keep selectors and actions decoupled from the tests.
 
+### How to run the suite
+
+```bash
+cd automatizacion-cypress
+npm install
+npm run cy:open     # Interactive mode (Cypress App)
+npm run cy:run      # Headless mode (terminal / CI)
+```
+
+> Detailed suite documentation (structure, conventions and spec ↔ manual case mapping) in [`automatizacion-cypress/README.md`](automatizacion-cypress/README.md).
+
 | Field | Detail |
 |---|---|
 | **Framework** | Cypress 13.17 |
@@ -99,17 +110,6 @@ As a complement to the manual assessment, a subset of **end-to-end (E2E)** cases
 ### `[BUG]` tests
 
 Some cases document **known bugs** and carry the `[BUG]` prefix in their name. These tests **assert the defective behaviour**, so they **pass while the bug is still alive**. The day a `[BUG]` test **fails**, it means the bug was fixed and the test must be updated to the correct behaviour.
-
-### How to run the suite
-
-```bash
-cd automatizacion-cypress
-npm install
-npm run cy:open     # Interactive mode (Cypress App)
-npm run cy:run      # Headless mode (terminal / CI)
-```
-
-> Detailed suite documentation (structure, conventions and spec ↔ manual case mapping) in [`automatizacion-cypress/README.md`](automatizacion-cypress/README.md).
 
 ---
 
@@ -302,6 +302,17 @@ El Test Plan está compuesto por **46 casos de prueba** distribuidos en 7 módul
 
 Como complemento al relevamiento manual, se automatizó un subconjunto de casos **end-to-end (E2E)** con **Cypress**, aplicando el patrón **Page Object Model (POM)** para mantener los selectores y las acciones desacoplados de los tests.
 
+### Cómo ejecutar la suite
+
+```bash
+cd automatizacion-cypress
+npm install
+npm run cy:open     # Modo interactivo (Cypress App)
+npm run cy:run      # Modo headless (terminal / CI)
+```
+
+> Documentación detallada de la suite (estructura, convenciones y mapeo specs ↔ casos manuales) en [`automatizacion-cypress/README.md`](automatizacion-cypress/README.md).
+
 | Campo | Detalle |
 |---|---|
 | **Framework** | Cypress 13.17 |
@@ -327,17 +338,6 @@ Como complemento al relevamiento manual, se automatizó un subconjunto de casos 
 ### Tests `[BUG]`
 
 Algunos casos documentan **bugs conocidos** y llevan el prefijo `[BUG]` en su nombre. Estos tests **afirman el comportamiento defectuoso**, por lo que **pasan mientras el bug sigue vivo**. El día que un test `[BUG]` **falla**, significa que el bug fue corregido y el test debe actualizarse al comportamiento correcto.
-
-### Cómo ejecutar la suite
-
-```bash
-cd automatizacion-cypress
-npm install
-npm run cy:open     # Modo interactivo (Cypress App)
-npm run cy:run      # Modo headless (terminal / CI)
-```
-
-> Documentación detallada de la suite (estructura, convenciones y mapeo specs ↔ casos manuales) en [`automatizacion-cypress/README.md`](automatizacion-cypress/README.md).
 
 ---
 
