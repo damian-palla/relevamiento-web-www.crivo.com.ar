@@ -1,3 +1,10 @@
 node_modules/
 cypress/screenshots/
 cypress/videos/
+cypress/downloads/
+
+# Generated test reports (the published snapshot lives in docs/)
+cypress/reports/
+
+# Claude Code local config
+.claude/

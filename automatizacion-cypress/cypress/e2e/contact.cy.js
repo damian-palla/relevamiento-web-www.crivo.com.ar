@@ -21,7 +21,7 @@ describe('Contact Form — crivo.com.ar/#contacto', () => {
 
   // ── Happy path ─────────────────────────────────────────────────────────────
 
-  it.only('TC 1 — submits successfully with all valid fields', function () {
+  it('TC 1 — submits successfully with all valid fields', function () {
     contactPage.visit()
     contactPage.fillAndSubmit(this.contact.validData)
     contactPage.assertSubmissionSuccess()
@@ -50,16 +50,20 @@ describe('Contact Form — crivo.com.ar/#contacto', () => {
   // lands on /enviar_mail). They PASS while the bug is live; if one FAILS, the
   // site started rejecting the value — the bug was fixed, update the test.
 
-  it('TC 4 [BUG] — submits with an email missing the @ symbol (BUG-014)', function () {
+  it('TC 4 - error shown after submiting with an email missing the @ symbol ', function () {
     contactPage.visit()
     contactPage.fillAndSubmit(this.contact.invalidEmail)
     cy.url().should('include', '/enviar_mail')
+    cy.get(SELECTORS.successTitle).should('contain.text', 'HUBO UN ERROR')
+    cy.get(SELECTORS.successBody).should('contain.text', 'No se pudo enviar el mensaje, por favor intentelo nuevamente.')
   })
 
-  it('TC 5 [BUG] — submits with an email that has no domain after @ (BUG-014)', function () {
+  it('TC 5 - error shown after submiting with an email that has no domain after the @ symbol ', function () {
     contactPage.visit()
     contactPage.fillAndSubmit(this.contact.invalidEmailDomain)
     cy.url().should('include', '/enviar_mail')
+    cy.get(SELECTORS.successTitle).should('contain.text', 'HUBO UN ERROR')
+    cy.get(SELECTORS.successBody).should('contain.text', 'No se pudo enviar el mensaje, por favor intentelo nuevamente.')
   })
 
   // ── Phone validation (BUG-014) ─────────────────────────────────────────────
@@ -69,13 +73,18 @@ describe('Contact Form — crivo.com.ar/#contacto', () => {
   it('TC 6 [BUG] — submits with a phone that contains letters (BUG-014)', function () {
     contactPage.visit()
     contactPage.fillAndSubmit(this.contact.invalidPhone)
+    cy.log('❌ Error - Phone contains letters')
     cy.url().should('include', '/enviar_mail')
+    cy.get(SELECTORS.successTitle).should('contain.text', 'GRACIAS').as('❌ Error)')
   })
 
   it('TC 7 [BUG] — submits with a phone under 8 digits (BUG-014)', function () {
     contactPage.visit()
     contactPage.fillAndSubmit(this.contact.shortPhone)
+    cy.log('❌ Error - Phone field acepts a phone under 8 digits')
     cy.url().should('include', '/enviar_mail')
+    cy.get(SELECTORS.successTitle).should('contain.text', 'GRACIAS').as('❌ Error)')
+
   })
 
   // ── Optional-but-starred fields (BUG-007 / BUG-008) ────────────────────────
@@ -86,13 +95,16 @@ describe('Contact Form — crivo.com.ar/#contacto', () => {
   it('TC 8 [BUG] — submits with an empty "Tipo de producto" (BUG-007)', function () {
     contactPage.visit()
     contactPage.fillAndSubmit(this.contact.emptyProductType)
+    cy.log('❌ Error - Product type is marked as required but the form accepts an empty value')
     cy.url().should('include', '/enviar_mail')
+    cy.get(SELECTORS.successTitle).should('contain.text', 'GRACIAS').as('❌ Error)')
   })
 
-  it('TC 9 [BUG] — submits with empty "Comentarios" (BUG-008)', function () {
+  it('TC 9 — submits with empty "Comentarios"', function () {
     contactPage.visit()
     contactPage.fillAndSubmit(this.contact.emptyComments)
     cy.url().should('include', '/enviar_mail')
+    cy.get(SELECTORS.successTitle).should('contain.text', 'GRACIAS')
   })
 
   // ── Structural integrity ───────────────────────────────────────────────────

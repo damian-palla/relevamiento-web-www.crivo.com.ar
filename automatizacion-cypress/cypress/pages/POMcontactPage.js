@@ -91,7 +91,7 @@ class ContactPage {
   /** Loads the homepage and scrolls the viewport to the contact section. */
   visit() {
     cy.visit('/')
-    cy.get('button[data-bs-dismiss="modal"]').first().click()
+    cy.dismissPromoModal()
     this.scrollToForm()
   }
 
@@ -104,28 +104,28 @@ class ContactPage {
   // ── Field interactions ─────────────────────────────────────────────────────
 
   fillFirstName(value) {
-  cy.get(SELECTORS.firstName).clear({ force: true })
-  if (value) cy.get(SELECTORS.firstName).type(value, { force: true })
+  cy.get(SELECTORS.firstName).clear()
+  if (value) cy.get(SELECTORS.firstName).type(value)
 }
 
   fillLastName(value) {
-    const el = cy.get(SELECTORS.lastName).clear({ force: true })
-    if (value) el.type(value, { force: true })
+    const el = cy.get(SELECTORS.lastName).clear()
+    if (value) el.type(value)
   }
 
   fillCompany(value) {
-    const el = cy.get(SELECTORS.company).clear({ force: true })
-    if (value) el.type(value, { force: true })
+    const el = cy.get(SELECTORS.company).clear()
+    if (value) el.type(value)
   }
 
   fillEmail(value) {
-    const el = cy.get(SELECTORS.email).clear({ force: true })
-    if (value) el.type(value, { force: true })
+    const el = cy.get(SELECTORS.email).clear()
+    if (value) el.type(value)
   }
 
   fillPhone(value) {
-    const el = cy.get(SELECTORS.phone).clear({ force: true })
-    if (value) el.type(value, { force: true })
+    const el = cy.get(SELECTORS.phone).clear()
+    if (value) el.type(value)
   }
 
   /**
@@ -134,12 +134,12 @@ class ContactPage {
    * @param {string} productValue - One of the PRODUCT_OPTIONS values.
    */
   selectProductType(productValue) {
-    if (productValue) cy.get(SELECTORS.productType).select(productValue,{ force: true })
+    if (productValue) cy.get(SELECTORS.productType).select(productValue)
   }
 
   fillComments(value) {
-  cy.get(SELECTORS.comments).clear({ force: true })
-  if (value) cy.get(SELECTORS.comments).type(value, { force: true })
+  cy.get(SELECTORS.comments).clear()
+  if (value) cy.get(SELECTORS.comments).type(value)
 }
 
   // ── Full form ──────────────────────────────────────────────────────────────
@@ -155,6 +155,8 @@ class ContactPage {
    * @param {string} data.productType  - A value from PRODUCT_OPTIONS
    * @param {string} [data.comments]   - Optional free text
    */
+
+
   fillForm({ firstName, lastName, company, email, phone, productType, comments = '' }) {
     this.fillFirstName(firstName)
     this.fillLastName(lastName)
@@ -167,14 +169,14 @@ class ContactPage {
 
   // ── Submission ─────────────────────────────────────────────────────────────
 
-  submit() {
+  submitForm() {
     cy.get(SELECTORS.submitButton).click()
   }
 
   /** Fills the form and submits it in one step. */
   fillAndSubmit(data) {
     this.fillForm(data)
-    this.submit()
+    this.submitForm ()
   }
 
   // ── Assertions ─────────────────────────────────────────────────────────────
@@ -215,7 +217,7 @@ class ContactPage {
    */
   assertProductOptionsMatch() {
     Object.values(PRODUCT_OPTIONS).forEach(option => {
-      cy.get(SELECTORS.productType).should('contain', option)
+      cy.get(SELECTORS.productType).should('contain', option).as(`${option} option`)
     })
     cy.get(`${SELECTORS.productType} option`)
       .should('have.length', Object.keys(PRODUCT_OPTIONS).length + 1)

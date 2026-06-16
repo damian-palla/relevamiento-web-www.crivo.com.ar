@@ -8,6 +8,8 @@
 
 > Part of the [QA Assessment — Crivo S.R.L.](../README.md) project.
 
+📊 **[View the live execution report →](https://damian-palla.github.io/relevamiento-web-www.crivo.com.ar/test-report.html)** (Mochawesome, latest run)
+
 ---
 
 ## 📦 Stack
@@ -102,6 +104,8 @@ Cases that document a **known defect** carry the `[BUG]` prefix in their name an
 Suite de pruebas **end-to-end (E2E)** del sitio [crivo.com.ar](https://crivo.com.ar), desarrollada como complemento al relevamiento QA manual. Automatiza el subconjunto de casos de **escritorio** con **Cypress** y el patrón **Page Object Model (POM)**.
 
 > Forma parte del proyecto [Relevamiento QA — Crivo S.R.L.](../README.md).
+
+📊 **[Ver el reporte de ejecución en vivo →](https://damian-palla.github.io/relevamiento-web-www.crivo.com.ar/test-report.html)** (Mochawesome, última corrida)
 
 ---
 

@@ -71,8 +71,9 @@ classes are used only as scope containers (links anchored by `href`).
 ### products.cy.js — Products & detail (4)
 27. ✅ Category tabs filter products
 28. ✅ Each card has a visible "Ver producto" button
-29. ✅ "Ver producto" redirects to the detail page
-30. ✅ Detail page loads with title and image
+29. ✅ "Ver producto" redirects to the detail page (click wiring, 1 representative)
+29 bis. ✅ Per category, card links match `products.json` exactly (set + count) — catches live/fixture drift
+30. ✅ Every product detail page loads with title and image (one it() per fixture product; full `cy.visit`)
 
 ### seo.cy.js — Metadata (4)
 Uses `cy.request` + `DOMParser` (title/h1/meta live in the static HTML).

@@ -1,6 +1,13 @@
 const { defineConfig } = require('cypress')
 
 module.exports = defineConfig({
+  reporter: 'mochawesome',
+  reporterOptions: {
+    reportDir: 'cypress/reports/mochawesome',
+    overwrite: false,   // keep one JSON per spec so the merge step can combine them
+    html: false,        // skip per-spec HTML; the final report is built by the merge/generate step
+    json: true,
+  },
   e2e: {
     baseUrl: 'https://www.crivo.com.ar',
     viewportWidth: 1280,

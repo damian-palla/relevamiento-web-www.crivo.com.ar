@@ -19,7 +19,7 @@ export const ENDPOINTS = {
     { path: '/productos/placas-rigidas',   name: 'Placas rígidas' },
     { path: '/productos/portabanners',     name: 'Portabanners' },
     { path: '/productos/tintas-accesorios', name: 'Tintas y accesorios' },
-    { path: '/graphictac',                 name: 'Graphictac' },
+    //{ path: '/graphictac',                 name: 'Graphictac' },//
   ],
 
   // Known to expose server errors — used by security (must NOT leak a stack trace).

@@ -11,7 +11,7 @@ describe('Home — insumos section', () => {
 
   beforeEach(() => {
     homePage.visit()
-    cy.get('button[data-bs-dismiss="modal"]').first().click()
+    cy.dismissPromoModal()
   })
 
   it('TC 25 — "Ver todos los productos" links to /productos/vinilos', () => {

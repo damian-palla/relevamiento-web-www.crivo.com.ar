@@ -5,9 +5,17 @@
   "scripts": {
     "cy:open": "cypress open",
     "cy:run": "cypress run",
-    "cy:run:headed": "cypress run --headed"
+    "cy:run:headed": "cypress run --headed",
+    "report:clean": "rimraf cypress/reports",
+    "report:merge": "mochawesome-merge cypress/reports/mochawesome/*.json > cypress/reports/report.json",
+    "report:generate": "marge cypress/reports/report.json -o cypress/reports/html",
+    "test:report": "npm run report:clean && cypress run && npm run report:merge && npm run report:generate"
   },
   "devDependencies": {
-    "cypress": "^13.17.0"
+    "cypress": "^13.17.0",
+    "mochawesome": "^7.1.4",
+    "mochawesome-merge": "^5.1.1",
+    "mochawesome-report-generator": "^6.3.2",
+    "rimraf": "^6.1.3"
   }
 }

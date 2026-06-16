@@ -9,12 +9,22 @@
 
 const SELECTORS = {
   // ── Category tabs (on /productos/[slug]) ──────────────────────────────────
-  // Note: same href pattern appears in the nav dropdown — use cy.contains()
-  // in clickCategoryTab() to match by visible text and avoid ambiguity.
-  categoryTabs:     'a[href*="/productos/"]',
+  // Scoped to the visible .categorias_prod bar that the listing pages render
+  // above the products. The same /productos/ href also appears in the navbar
+  // (the mobile dropdown and the desktop hover menu), so an unscoped selector
+  // would be ambiguous — keep this bound to .categorias_prod.
+  categoryTabs:     '.categorias_prod a',
 
   // ── Product listing ───────────────────────────────────────────────────────
-  verProductoLinks: 'a[href*="/detalle_producto/"]',
+  // The listing pages use two card layouts, sometimes mixed within one category:
+  // image cards (.cont_subcat) and button-only cards (.cont_boton_subcat). The
+  // selector unions both so it catches every real "Ver producto" button. Scoping
+  // to these containers also excludes the navbar .hover_submenu links, which are
+  // hidden until hover — an unscoped a[href*="/detalle_producto/"] would match
+  // those too, so .first() could land on a hidden element and break the click
+  // (TC 29) and visibility (TC 28) assertions.
+  verProductoLinks:
+    '.cont_subcat a[href*="/detalle_producto/"], .cont_boton_subcat a[href*="/detalle_producto/"]',
 
   // ── Product detail (on /detalle_producto/[cat]/[slug]) ────────────────────
   productTitle:     'h1',
@@ -34,8 +44,14 @@ class ProductsPage {
 
   // ── Interactions ───────────────────────────────────────────────────────────
 
-  clickCategoryTab(label) {
-    cy.contains(SELECTORS.categoryTabs, label).click()
+  /**
+   * Clicks a category tab in the visible .categorias_prod bar, matched by its
+   * href path (e.g. '/productos/lonas'). Matching by path — not visible text —
+   * keeps it decoupled from the tab's exact casing and lets specs drive it
+   * straight from the canonical endpoint list.
+   */
+  clickCategoryTab(path) {
+    cy.get(`${SELECTORS.categoryTabs}[href*="${path}"]`).click()
   }
 
   clickFirstVerProducto() {
@@ -49,6 +65,21 @@ class ProductsPage {
     cy.get(SELECTORS.verProductoLinks)
       .should('have.length.greaterThan', 0)
       .and('be.visible')
+  }
+
+  /**
+   * Asserts the visible "Ver producto" links on the current category page point
+   * to exactly the expected detail paths — same set and same count, no more, no
+   * less. Card hrefs are absolute, so they're normalised to pathname before
+   * comparing. Catches the site adding/removing/re-slugging a product behind the
+   * fixture's back.
+   */
+  assertCardLinksExactly(expectedPaths) {
+    cy.get(SELECTORS.verProductoLinks).then(($links) => {
+      const actual = [...$links].map((a) => new URL(a.href).pathname).sort()
+      const expected = [...expectedPaths].sort()
+      expect(actual).to.deep.equal(expected)
+    })
   }
 
   /** Asserts the product detail page has a non-empty title and an image. */

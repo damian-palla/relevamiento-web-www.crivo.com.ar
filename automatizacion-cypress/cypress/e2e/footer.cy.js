@@ -12,7 +12,7 @@ describe('Footer — crivo.com.ar', () => {
 
   beforeEach(() => {
     cy.visit('/')
-    cy.get('button[data-bs-dismiss="modal"]').first().click()
+    cy.dismissPromoModal()
     footerPage.scrollToFooter()
   })
 
