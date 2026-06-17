@@ -8,7 +8,11 @@
 
 > Part of the [QA Assessment — Crivo S.R.L.](../README.md) project.
 
-📊 **[View the live execution report →](https://damian-palla.github.io/relevamiento-web-www.crivo.com.ar/test-report.html)** (Mochawesome, latest run)
+<p align="center">
+  <a href="https://damian-palla.github.io/relevamiento-web-www.crivo.com.ar/test-report.html">
+    <img src="https://img.shields.io/badge/📊_View_the_live_test_report-2ea44f?style=for-the-badge&logo=cypress&logoColor=white" alt="View the live test report (Mochawesome)">
+  </a>
+</p>
 
 ---
 
@@ -105,7 +109,11 @@ Suite de pruebas **end-to-end (E2E)** del sitio [crivo.com.ar](https://crivo.com
 
 > Forma parte del proyecto [Relevamiento QA — Crivo S.R.L.](../README.md).
 
-📊 **[Ver el reporte de ejecución en vivo →](https://damian-palla.github.io/relevamiento-web-www.crivo.com.ar/test-report.html)** (Mochawesome, última corrida)
+<p align="center">
+  <a href="https://damian-palla.github.io/relevamiento-web-www.crivo.com.ar/test-report.html">
+    <img src="https://img.shields.io/badge/📊_Ver_el_reporte_de_pruebas_en_vivo-2ea44f?style=for-the-badge&logo=cypress&logoColor=white" alt="Ver el reporte de pruebas en vivo (Mochawesome)">
+  </a>
+</p>
 
 ---
 

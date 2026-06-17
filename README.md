@@ -85,6 +85,12 @@ npm run cy:run      # Headless mode (terminal / CI)
 
 > Detailed suite documentation (structure, conventions and spec ↔ manual case mapping) in [`automatizacion-cypress/README.md`](automatizacion-cypress/README.md).
 
+<p align="center">
+  <a href="https://damian-palla.github.io/relevamiento-web-www.crivo.com.ar/test-report.html">
+    <img src="https://img.shields.io/badge/📊_View_the_live_test_report-2ea44f?style=for-the-badge&logo=cypress&logoColor=white" alt="View the live test report (Mochawesome)">
+  </a>
+</p>
+
 | Field | Detail |
 |---|---|
 | **Framework** | Cypress 13.17 |
@@ -312,6 +318,12 @@ npm run cy:run      # Modo headless (terminal / CI)
 ```
 
 > Documentación detallada de la suite (estructura, convenciones y mapeo specs ↔ casos manuales) en [`automatizacion-cypress/README.md`](automatizacion-cypress/README.md).
+
+<p align="center">
+  <a href="https://damian-palla.github.io/relevamiento-web-www.crivo.com.ar/test-report.html">
+    <img src="https://img.shields.io/badge/📊_Ver_el_reporte_de_pruebas_en_vivo-2ea44f?style=for-the-badge&logo=cypress&logoColor=white" alt="Ver el reporte de pruebas en vivo (Mochawesome)">
+  </a>
+</p>
 
 | Campo | Detalle |
 |---|---|
