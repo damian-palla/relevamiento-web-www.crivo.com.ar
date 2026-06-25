@@ -8,7 +8,7 @@
     "cy:run:headed": "cypress run --headed",
     "report:clean": "rimraf cypress/reports",
     "report:merge": "mochawesome-merge cypress/reports/mochawesome/mochawesome*.json > cypress/reports/report.json",
-    "report:generate": "marge cypress/reports/report.json -o cypress/reports/html --charts --reportFilename test-report --reportTitle \"E2E Test Report — crivo.com.ar\" --reportPageTitle \"E2E Test Report — crivo.com.ar\"",
+    "report:generate": "marge cypress/reports/report.json -o cypress/reports/html --charts --reportFilename index --reportTitle \"E2E Test Report — crivo.com.ar\" --reportPageTitle \"E2E Test Report — crivo.com.ar\"",
     "test:report": "npm run report:clean && cypress run && npm run report:merge && npm run report:generate"
   },
   "devDependencies": {

@@ -6,6 +6,12 @@
 
 Independent quality assessment of the [crivo.com.ar](https://crivo.com.ar) website, carried out as an external QA Engineer. The goal was to provide a diagnosis of the site's current state, documenting bugs, proposing improvements, and delivering concrete evidence to the development team and the client.
 
+<p align="center">
+  <a href="https://damian-palla.github.io/relevamiento-web-www.crivo.com.ar/index.html">
+    <img src="https://img.shields.io/badge/📊_View_the_live_test_report-2ea44f?style=for-the-badge&logo=cypress&logoColor=white" alt="View the live test report (Mochawesome)">
+  </a>
+</p>
+
 ---
 
 ## 📌 Project information
@@ -86,7 +92,7 @@ npm run cy:run      # Headless mode (terminal / CI)
 > Detailed suite documentation (structure, conventions and spec ↔ manual case mapping) in [`automatizacion-cypress/README.md`](automatizacion-cypress/README.md).
 
 <p align="center">
-  <a href="https://damian-palla.github.io/relevamiento-web-www.crivo.com.ar/test-report.html">
+  <a href="https://damian-palla.github.io/relevamiento-web-www.crivo.com.ar/index.html">
     <img src="https://img.shields.io/badge/📊_View_the_live_test_report-2ea44f?style=for-the-badge&logo=cypress&logoColor=white" alt="View the live test report (Mochawesome)">
   </a>
 </p>
@@ -240,6 +246,12 @@ Beyond the bugs, improvement opportunities were identified in the following area
 
 Relevamiento independiente de calidad sobre el sitio web [crivo.com.ar](https://crivo.com.ar), realizado en el rol de QA Engineer externo. El objetivo fue brindar un diagnóstico del estado actual del sitio, documentando bugs, proponiendo mejoras y entregando evidencia concreta al equipo de desarrollo y al cliente.
 
+<p align="center">
+  <a href="https://damian-palla.github.io/relevamiento-web-www.crivo.com.ar/index.html">
+    <img src="https://img.shields.io/badge/📊_Ver_el_reporte_de_pruebas_en_vivo-2ea44f?style=for-the-badge&logo=cypress&logoColor=white" alt="Ver el reporte de pruebas en vivo (Mochawesome)">
+  </a>
+</p>
+
 ---
 
 ## 📌 Información del proyecto
@@ -320,7 +332,7 @@ npm run cy:run      # Modo headless (terminal / CI)
 > Documentación detallada de la suite (estructura, convenciones y mapeo specs ↔ casos manuales) en [`automatizacion-cypress/README.md`](automatizacion-cypress/README.md).
 
 <p align="center">
-  <a href="https://damian-palla.github.io/relevamiento-web-www.crivo.com.ar/test-report.html">
+  <a href="https://damian-palla.github.io/relevamiento-web-www.crivo.com.ar/index.html">
     <img src="https://img.shields.io/badge/📊_Ver_el_reporte_de_pruebas_en_vivo-2ea44f?style=for-the-badge&logo=cypress&logoColor=white" alt="Ver el reporte de pruebas en vivo (Mochawesome)">
   </a>
 </p>
