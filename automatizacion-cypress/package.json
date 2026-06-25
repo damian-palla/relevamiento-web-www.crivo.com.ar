@@ -9,9 +9,11 @@
     "report:clean": "rimraf cypress/reports",
     "report:merge": "mochawesome-merge cypress/reports/mochawesome/mochawesome*.json > cypress/reports/report.json",
     "report:generate": "marge cypress/reports/report.json -o cypress/reports/html --charts --reportFilename index --reportTitle \"E2E Test Report — crivo.com.ar\" --reportPageTitle \"E2E Test Report — crivo.com.ar\"",
-    "test:report": "npm run report:clean && cypress run && npm run report:merge && npm run report:generate"
+    "report:publish": "rimraf ../docs && copyfiles -u 3 \"cypress/reports/html/**/*\" ../docs",
+    "test:report": "npm run report:clean && cypress run && npm run report:merge && npm run report:generate && npm run report:publish"
   },
   "devDependencies": {
+    "copyfiles": "^2.4.1",
     "cypress": "^13.17.0",
     "mochawesome": "^7.1.4",
     "mochawesome-merge": "^5.1.1",
