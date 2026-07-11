@@ -20,7 +20,7 @@ Independent quality assessment of the [crivo.com.ar](https://crivo.com.ar) websi
 |---|---|
 | **Client** | Crivo S.R.L. |
 | **Site under test** | [https://crivo.com.ar](https://crivo.com.ar) |
-| **Test type** | Manual — Black box |
+| **Test type** | Manual & Automated |
 | **Environment** | Production |
 | **Delivery date** | April 2026 |
 
@@ -260,7 +260,7 @@ Relevamiento independiente de calidad sobre el sitio web [crivo.com.ar](https://
 |---|---|
 | **Cliente** | Crivo S.R.L. |
 | **Sitio bajo prueba** | [https://crivo.com.ar](https://crivo.com.ar) |
-| **Tipo de pruebas** | Manuales — Caja negra |
+| **Tipo de pruebas** | Manuales — Automatizadas |
 | **Entorno** | Producción |
 | **Fecha de entrega** | Abril 2026 |
 
